@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS PRACTICE</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="main" class="w-full h-full flex flex-col items-center justify-center">
+        <div class="circle rounded-full mt-10 border-[1.5px] w-[10rem] border-yellow-600 aspect-square">
+        </div>
+        <button class="red mt-5 bulb-button rounded-lg w-52 bg-green-500 border-2 px-10 py-2 uppercase text-white">Turn
+            on</button>
+
+        <div class="bookmarks w-full py-5 px-5 border-2 bg-blue-50 flex flex-col gap-5">
+            <h1 class="font-semibold text-lg">Bookmarks</h1>
+            <li onmouseup="this.style.color = 'blue'" onmousedown="this.style.color = 'red'"
+                class="chatgpt text-sm w-fit font-semibold text-[#0000FF] underline cursor-pointer">Chatgpt
+            </li>
+            <li onmouseup="this.style.color = 'blue'" onmousedown="this.style.color = 'red'"
+                class="tailwindcss text-sm w-fit font-semibold text-[#0000FF] underline cursor-pointer">
+                tailwindcss installation</li>
+            <li onmouseup="this.style.color = 'blue'" onmousedown="this.style.color = 'red'"
+                class="github text-sm w-fit font-semibold text-[#0000FF] underline cursor-pointer">
+                Your repositories git hub</li>
+
+        </div>
+    </div>
+    <div class="buttons flex flex-col w-fit mt-20">
+        <button class="red button rounded-lg bg-red-500 border-2 px-10 py-2 uppercase text-white">click here</button>
+        <button class="blue button rounded-lg bg-blue-500 border-2 px-10 py-2 uppercase text-white">click here</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="/JS_inBrowser/eventsPractice/eventsPractice.js"></script>
+</body>
+
+</html>
