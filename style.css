@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.joke-box{
+    overflow: hidden;
+    min-height: 50px;
+    transition: max-height ease .3s;
+}
+.joke-box.expanded {
+    background-color: ligh;
+    max-height: 1000px;
+}
+
+.glow-yellow {
+    box-shadow: 0 0 20px 5px rgba(255, 223, 0, 0.75);
+}
