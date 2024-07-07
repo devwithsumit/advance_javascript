@@ -1,0 +1,48 @@
+<!DOCTYPE html>s
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackerman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./image.png" type="image/x-icon">
+</head>
+<style>
+    #main {
+        background-color: #1a1a1a;
+    }
+    .terminal {
+        font-family: 'Courier New', Courier, monospace;
+        overflow-y: auto;
+        padding: 1rem;
+        color: darkgrey;
+    }
+    .terminal::-webkit-scrollbar{
+        display: none;
+    }
+    .terminal span{
+        color: #00ff00;
+    }
+</style>
+<body>
+    <div id="main" class="w-full h-screen bg-gray-900 p-5 flex items-center justify-center">
+        <div class="terminal bg-black w-full max-w-4xl h-2/3 rounded-lg shadow-lg p-4">
+            <div class="output" id="output">
+                <!-- <p class="mb-2">Hackerman@system:~$ <span class="font-semibold text-sm">Initializing hack sequence...</span></p>
+                <p class="mb-2">Hackerman@system:~$ <span class="font-semibold text-sm">Accessing mainframe...</span></p>
+                <p class="mb-2">Hackerman@system:~$ <span class="font-semibold text-sm">Bypassing security...</span></p>
+                <p class="mb-2">Hackerman@system:~$ <span class="font-semibold text-sm">Success! System compromised!</span></p> -->
+            </div>
+            <div id="userInput" class="input-container">
+                <p class="mb-2 whitespace-nowrap">Hackerman@system:~$ <input type="text" class="input bg-transparent text-[#e8e8e8] placeholder:text-[#e8e8e8] text-[#00ff00] outline-none w-full" placeholder="Enter command or type 'help' for details"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="/Exercises/5.hakerman/hakerman.js"></script>
+</body>
+
+</html>
