@@ -1,4 +1,8 @@
 class RailwayForm {
+    //default constructor is created if none is given
+    //     super(...args)
+    // constructor(...args){ 
+    // }
     constructor(givenname, trainno) {
         this.type = 'railway Form' //can be given as the default value
         this.name = givenname
