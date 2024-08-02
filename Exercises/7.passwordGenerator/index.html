@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center font-mono items-center min-h-screen bg-blue-100">
+    <div class="flex flex-col items-center justify-center h-screen">
+        <div class="mb-6">
+            <label for="length" class="text-gray-700 font-bold">Password Length:</label>
+            <input type="number" id="length" name="length"
+                class="ml-2 border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                min="6" max="30" value="12">
+        </div>
+        <div class="mb-6">
+            <label for="includeUppercase" class="text-gray-700 font-bold">Include Uppercase Letters:</label>
+            <input type="checkbox" id="includeUppercase" name="includeUppercase" class="ml-2">
+        </div>
+        <div class="mb-6">
+            <label for="includeNumbers" class="text-gray-700 font-bold">Include Numbers:</label>
+            <input type="checkbox" id="includeNumbers" name="includeNumbers" class="ml-2">
+        </div>
+        <div class="mb-6">
+            <label for="includeSymbols" class="text-gray-700 font-bold">Include Symbols:</label>
+            <input type="checkbox" id="includeSymbols" name="includeSymbols" class="ml-2">
+        </div>
+        <button id="generateBtn"
+            class="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Generate
+            Password</button>
+        <div id="password" class="mt-6"></div>
+    </div>
+    
+    <!-- <script>
+        var generateBtn = document.getElementById('generateBtn');
+        var lengthInput = document.getElementById('length');
+        var includeUppercaseInput = document.getElementById('includeUppercase');
+        var includeNumbersInput = document.getElementById('includeNumbers');
+        var includeSymbolsInput = document.getElementById('includeSymbols');
+        var passwordDisplay = document.getElementById('password');
+
+        var lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz';
+        var uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var numbers = '0123456789';
+        var symbols = '!@#$%^&*()_+-={}[]|\\:;"<>,.?/~';
+
+        generateBtn.addEventListener('click', () => {
+            var length = lengthInput.value;
+            var includeUppercase = includeUppercaseInput.checked;
+            var includeNumbers = includeNumbersInput.checked;
+            var includeSymbols = includeSymbolsInput.checked;
+
+            let validChars = lowercaseLetters;
+            if (includeUppercase) validChars += uppercaseLetters;
+            if (includeNumbers) validChars += numbers;
+            if (includeSymbols) validChars += symbols;
+
+            let password = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * validChars.length);
+                password += validChars[randomIndex];
+            }
+
+            passwordDisplay.innerText = password;
+        });
+    </script> -->
+
+    <script src="/Exercises/7.passwordGenerator/passwordG.js"></script>
+</body>
+
+</html>
